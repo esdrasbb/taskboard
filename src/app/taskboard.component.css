@@ -1,0 +1,36 @@
+#estoria-card {
+  padding-bottom: 3%;
+}
+
+span, label {
+  display: block;  
+}
+
+.delete {
+  margin-top: 5%;
+  margin-left: 35%;
+}
+
+.points {
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+h3 {
+  margin-left: 5%;
+}
+
+#left span, label {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.tarefa-card span {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.tarefa-form {
+  
+}

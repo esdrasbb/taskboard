@@ -15,12 +15,12 @@
     <div *ngIf="estoria === selectedEstoria">
       <div class="card z-depth-5 clearfix tarefa-card" *ngFor="let tarefa of estoria.tarefas">
         <span>Tarefa: {{ tarefa.descricao }}</span>
-      </div>
-      <div class="tarefa-form">
-        <span>Nova Tarefa</span>
-        <label for="description">Descrição:</label> <input id="description" #descricao /><br/>
-        <button (click)="addTarefa(estoria, descricao.value); descricao.value=''">Adicionar Tarefa</button>
-      </div>
+      </div>      
     </div>
+  </div>
+  <div class="tarefa-form">
+    <span>Nova Tarefa</span>
+    <label for="description">Descrição:</label> <input id="description" #descricao /><br/>
+    <button (click)="addTarefa(selectedEstoria, descricao.value); descricao.value=''">Adicionar Tarefa</button>
   </div>
 </div>

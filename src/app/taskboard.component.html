@@ -1,4 +1,4 @@
-<h2>Taskboard</h2>
+<h2>Estórias de Usuários</h2>
 <div class="heroes">
   <div *ngFor="let estoria of estorias" [class.selected]="estoria === selectedEstoria">
     <div id="estoria-card" class="card z-depth-5 clearfix">
@@ -18,7 +18,7 @@
       </div>
       <div class="tarefa-form">
         <span>Nova Tarefa</span>
-        <label>Descrição:</label> <input #descricao/>
+        <label for="description">Descrição:</label> <input id="description" #descricao /><br/>
         <button (click)="addTarefa(estoria, descricao.value); descricao.value=''">Adicionar Tarefa</button>
       </div>
     </div>

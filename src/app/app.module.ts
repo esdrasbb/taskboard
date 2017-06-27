@@ -6,12 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TaskboardService } from './taskboard.service';
 
-
-import { DashboardComponent } from './dashboard.component';
-import { HeroDetailComponent } from './hero-detail.component';
-import { HeroesComponent } from './heroes.component';
-import { HeroService } from './hero.service';
-import { HeroSearchComponent } from './hero-search.component';
 import { TaskboardComponent }  from './taskboard.component';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,13 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
-    HeroDetailComponent,
-    HeroesComponent,
-    HeroSearchComponent,
     TaskboardComponent
   ],
-  providers: [HeroService, TaskboardService],
+  providers: [TaskboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

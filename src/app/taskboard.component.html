@@ -4,12 +4,14 @@
     <div id="estoria-card" class="card z-depth-5 clearfix">
       <div id="left" class="col-xs col-sm-3 col-md-5">
         <h3> {{estoria.titulo}}</h3>
-        <span> {{estoria.descricao}}</span>      
-        <span (click)="$event.stopPropagation();showTarefas(estoria);$event.stopPropagation()">Tarefas</span>
-      </div>
+        <span> {{estoria.descricao}}</span>              
+      </div>      
       <div class="col-xs col-sm-1 col-md-1">
         <button class="delete" (click)="delete(estoria.id); $event.stopPropagation()">Finalizar</button>
         <h4 class="points">{{estoria.pontos}} Pontos</h4>   
+      </div>
+      <div id="tarefas" class="col-xs col-sm-4 col-md-6" (click)="toggleTarefas(estoria)">
+        <span>Tarefas</span>
       </div>
     </div>
     <div *ngIf="estoria === selectedEstoria">

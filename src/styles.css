@@ -24,8 +24,7 @@ button {
   font-family: Arial;
   background-color: #eee;
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 5px 25px;
   cursor: pointer;
   cursor: hand;
 }

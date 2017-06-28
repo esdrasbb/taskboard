@@ -34,8 +34,12 @@ export class TaskboardComponent implements OnInit {
     this.router.navigate(['/detail', this.selectedEstoria.id]);
   }
 
-  showTarefas(estoria: Estoria): void {
-    this.selectedEstoria = estoria;
+  toggleTarefas(estoria: Estoria): void {
+    if (this.selectedEstoria !== null && this.selectedEstoria === estoria) {
+      this.selectedEstoria = null;
+    } else {
+      this.selectedEstoria = estoria;
+    }
   }
 
   add(estoria: Estoria): void {
@@ -49,12 +53,16 @@ export class TaskboardComponent implements OnInit {
   }
 
   addTarefa(estoria: Estoria, descricao: string): void {
+    if (estoria === null || descricao.trim() === "") {
+      return;
+    }
+    
     const tarefas = estoria.tarefas;
     const novaTarefa = new Tarefa();
     novaTarefa.id = 1 + tarefas[(tarefas.length - 1)].id;
     novaTarefa.descricao = descricao;
     estoria.tarefas.push(novaTarefa);
-    //this.taskboardService.update(estoria);
+    this.taskboardService.update(estoria);
   }
 
   delete(id: number): void {
@@ -64,5 +72,5 @@ export class TaskboardComponent implements OnInit {
         this.estorias = this.estorias.filter(h => h.id !== id);
         if (this.selectedEstoria.id === id) { this.selectedEstoria = null; }
       });
-}
+  }
 }

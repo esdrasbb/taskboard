@@ -15,10 +15,7 @@
 }
 .col-xs, .col-sm-1, .col-sm-2,  .col-sm-3,  .col-sm-4, .col-md-1, .col-md-2, .col-md-3, .col-md-4 {
     float: left;
-}
-body {
-    background-color: lightblue;
-}    
+}  
 table {
     border: 0;
     border-collapse: collapse;
@@ -360,10 +357,7 @@ textarea {
     }
     nav ul li {
         width: 33.33333%;
-    }    
-    body {
-        background-color: lightslategray;
-    }         
+    }        
  }
 /* Dispositivos médios e grandes (Desktops - 992px e superiores) */
 @media only screen and (min-width: 992px) { 
@@ -393,8 +387,5 @@ textarea {
     }
     nav ul li {
         width: 33.33333%;
-    }  
-    body {
-        background-color: lightseagreen;
-    }                 
+    }                
  }

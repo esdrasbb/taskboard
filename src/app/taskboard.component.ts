@@ -53,10 +53,10 @@ export class TaskboardComponent implements OnInit {
   }
 
   addTarefa(estoria: Estoria, descricao: string): void {
-    if (estoria === null || descricao.trim() === "") {
+    if (estoria || descricao.trim() === "") {
       return;
     }
-    
+
     const tarefas = estoria.tarefas;
     const novaTarefa = new Tarefa();
     novaTarefa.id = 1 + tarefas[(tarefas.length - 1)].id;
@@ -69,8 +69,10 @@ export class TaskboardComponent implements OnInit {
     this.taskboardService
       .delete(id)
       .subscribe(() => {
-        this.estorias = this.estorias.filter(h => h.id !== id);
-        if (this.selectedEstoria.id === id) { this.selectedEstoria = null; }
+        this.estorias = this.estorias.filter(e => e.id !== id);
+        if (this.selectedEstoria && this.selectedEstoria.id === id) {
+          this.selectedEstoria = null;
+        }
       });
   }
 }

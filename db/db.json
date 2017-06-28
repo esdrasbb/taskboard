@@ -1,7 +1,7 @@
 {
   "estorias": [
     {
-      "id": "4",
+      "id": "1",
       "titulo": "Nome da Estória 1",
       "descricao": "Como usuario, gostartia disso e daquilo",
       "pontos": "10",
@@ -17,26 +17,10 @@
       ]
     },
     {
+      "id": "2",
       "titulo": "Nome da Estória 2",
       "descricao": "Como usuario, gostartia disso e daquilo",
-      "pontos": "30",
-      "id": "rk6YImLMb",
-      "tarefas": [
-        {
-          "id": "1",
-          "descricao": "12"
-        },
-        {
-          "id": "2",
-          "descricao": "24"
-        }
-      ]
-    },
-    {
-      "titulo": "Nome da Estória 3",
-      "descricao": "Como usuario, gostartia disso e daquilo",
       "pontos": "20",
-      "id": "B1-mDQUMW",
       "tarefas": [
         {
           "id": "1",
@@ -49,10 +33,10 @@
       ]
     },
     {
+      "id": "4",
       "titulo": "Nome da Estória 4",
       "descricao": "Como usuario, gostartia disso e daquilo",
-      "pontos": "40",
-      "id": "rkW8P7UfZ",
+      "pontos": "25",
       "tarefas": [
         {
           "id": "1",
@@ -65,10 +49,10 @@
       ]
     },
     {
+      "id": "5",
       "titulo": "Nome da Estória 5",
       "descricao": "Como usuario, gostartia disso e daquilo",
-      "pontos": "30",
-      "id": "BJsOPXIMZ",
+      "pontos": "35",
       "tarefas": [
         {
           "id": "1",
@@ -79,52 +63,6 @@
           "descricao": "24"
         }
       ]
-    }
-  ],
-  "heroes": [
-    {
-      "id": 0,
-      "name": "Zero"
-    },
-    {
-      "id": 11,
-      "name": "Mr. Nice"
-    },
-    {
-      "id": 12,
-      "name": "Narco"
-    },
-    {
-      "id": 13,
-      "name": "Bombasto 13"
-    },
-    {
-      "id": 14,
-      "name": "Celeritas"
-    },
-    {
-      "id": 15,
-      "name": "Magneta"
-    },
-    {
-      "id": 16,
-      "name": "RubberMan"
-    },
-    {
-      "id": 17,
-      "name": "Dynama"
-    },
-    {
-      "id": 19,
-      "name": "Magma"
-    },
-    {
-      "id": 20,
-      "name": "Tornado"
-    },
-    {
-      "name": "Elixir",
-      "id": 21
     }
   ]
 }

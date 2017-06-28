@@ -38,7 +38,9 @@ export class TaskboardService {
     const url = `${this.estoriaURL}/${estoria.id}`;
     return this.http
       .put(url, JSON.stringify(estoria), { headers: this.headers })
-      .map((res: Response) => res.json() as Estoria)
+      .map((res: Response) => {
+        return res.json() as Estoria
+      })
       .catch(this.handleError);
   }
 

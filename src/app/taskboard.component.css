@@ -30,7 +30,7 @@ h3 {
   margin-left: 5%;
 }
 
-#left span, label {
+#left span {
   margin-left: 5%;
   margin-top: 3%;
 }
@@ -62,5 +62,23 @@ h3 {
 }
 
 .tarefa-form {
-  
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  color: #444;
+}
+.tarefa-form h2 {
+  margin-left: 0;
+}
+.tarefa-form label {
+  margin-left: 0;
+  margin-bottom: 10px; 
+}
+.tarefa-form input {
+  margin-left: 0;  
+  width: 50%;
+}
+.tarefa-form button {
+  margin-left: 10px;  
+  background-color: #DDD;
 }
